@@ -6,5 +6,5 @@ public:
 	Core();
 	~Core();
 	int coreV;
-	int calltoCore(int);
+	int calltoCore(int&);
 };

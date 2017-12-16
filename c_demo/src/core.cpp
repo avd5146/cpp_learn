@@ -10,7 +10,7 @@ Core::~Core()
 {
 
 }
-int Core::calltoCore(int a) // TODO pass by reference
+int Core::calltoCore(int& a) // TODO pass by reference
 {
 	std::cout<<coreV<<std::endl;
 	std::cout<<(a)<<std::endl;
