@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(c_demo)
 
+SET(CMAKE_CXX_FLAGS "-std=c++0x -pthread") ## Enable flag for newer c++ features like mutex and thread, -pthread prevents runtime error
+
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
 
@@ -203,6 +205,13 @@ add_library(cortex src/cortex.cpp)
 include_directories($(root_SOURCE_DIR)/include)
 add_executable(nodelet src/nodelet.cpp)
 
+add_executable(inherit src/inherit.cpp)
+add_executable(threading src/threading.cpp)
+add_executable(pointer src/pointer.cpp)
+add_executable(linkedList1 src/linkedList1.cpp)
+
 #target_link_libraries(coop core)
 #target_link_libraries(nodelet coop)
 target_link_libraries(nodelet coop core cortex)
+
+target_link_libraries(inherit coop core cortex)

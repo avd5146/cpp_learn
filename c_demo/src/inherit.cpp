@@ -45,11 +45,12 @@ public:
 	Inherit(); // Does not work without this
 	~Inherit();
 	Coop coop; // object must be linked from the CMakeLists.txt
+
 };
 
 Inherit::Inherit() // Does not work without this
 {
-	//Coop coop;
+
 }
 
 Inherit::~Inherit() // Does not work without this

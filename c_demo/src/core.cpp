@@ -13,7 +13,7 @@ Core::~Core()
 int Core::calltoCore(int& a) // TODO pass by reference
 {
 	std::cout<<coreV<<std::endl;
-	std::cout<<(a)<<std::endl;
+	std::cout<<(a+10)<<std::endl;
 	
 	Coop coop;
 	std::cout<<(coop.coopV)<<std::endl;
