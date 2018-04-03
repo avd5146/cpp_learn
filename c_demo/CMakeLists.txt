@@ -209,6 +209,8 @@ add_executable(inherit src/inherit.cpp)
 add_executable(threading src/threading.cpp)
 add_executable(pointer src/pointer.cpp)
 add_executable(linkedList1 src/linkedList1.cpp)
+add_executable(containers src/containers.cpp)
+add_executable(templates src/templates.cpp)
 
 #target_link_libraries(coop core)
 #target_link_libraries(nodelet coop)
