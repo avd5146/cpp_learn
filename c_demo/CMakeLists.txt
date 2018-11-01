@@ -212,6 +212,8 @@ add_executable(linkedList1 src/linkedList1.cpp)
 add_executable(containers src/containers.cpp)
 add_executable(templates src/templates.cpp)
 
+add_executable(templates2 src/templates.cc)
+
 #target_link_libraries(coop core)
 #target_link_libraries(nodelet coop)
 target_link_libraries(nodelet coop core cortex)
